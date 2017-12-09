@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ewe-7x-teI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TalkBoy-->
+        <scene sceneID="xVb-oE-2Bv">
+            <objects>
+                <tableViewController id="nWc-le-Nvx" customClass="MainTableViewController" customModule="TalkBoy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="45f-fY-eqP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ihn-Et-nQb">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ihn-Et-nQb" id="Hg8-QY-gVN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nWc-le-Nvx" id="VrE-Rh-m4M"/>
+                            <outlet property="delegate" destination="nWc-le-Nvx" id="wgL-kJ-Bqk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="TalkBoy" id="Gpd-b7-U6x">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="8LZ-IC-nCE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Zm-GN-rsR">
+                            <connections>
+                                <segue destination="ViT-tT-o2Y" kind="show" id="qqw-0A-OIO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yz-r3-GyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="104"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="XXT-xt-vA4">
+            <objects>
+                <viewController id="ViT-tT-o2Y" customClass="RecordViewController" customModule="TalkBoy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JcR-a5-5wI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcO-8S-Y6P">
+                                <rect key="frame" x="163" y="90" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordBtn:" destination="ViT-tT-o2Y" eventType="touchUpInside" id="89k-0L-SS4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPV-hL-E14">
+                                <rect key="frame" x="172" y="145" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playBtn:" destination="ViT-tT-o2Y" eventType="touchUpInside" id="2Ht-Be-Voz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hdl-nk-SJa">
+                                <rect key="frame" x="60" y="200" width="255" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWs-46-hjK">
+                                <rect key="frame" x="172" y="255" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addBtn:" destination="ViT-tT-o2Y" eventType="touchUpInside" id="3ax-nP-6x2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tcO-8S-Y6P" firstAttribute="top" secondItem="5bY-JE-ohb" secondAttribute="top" constant="25" id="1Fb-xM-yLk"/>
+                            <constraint firstItem="OPV-hL-E14" firstAttribute="top" secondItem="tcO-8S-Y6P" secondAttribute="bottom" constant="25" id="47A-W5-zwV"/>
+                            <constraint firstItem="vWs-46-hjK" firstAttribute="top" secondItem="hdl-nk-SJa" secondAttribute="bottom" constant="25" id="Dbl-aB-odH"/>
+                            <constraint firstItem="hdl-nk-SJa" firstAttribute="centerX" secondItem="JcR-a5-5wI" secondAttribute="centerX" id="KP1-Qh-PPJ"/>
+                            <constraint firstItem="OPV-hL-E14" firstAttribute="top" secondItem="tcO-8S-Y6P" secondAttribute="bottom" constant="25" id="Kcd-fL-hQc"/>
+                            <constraint firstItem="hdl-nk-SJa" firstAttribute="top" secondItem="OPV-hL-E14" secondAttribute="bottom" constant="25" id="Rmh-AR-P0S"/>
+                            <constraint firstItem="hdl-nk-SJa" firstAttribute="top" secondItem="OPV-hL-E14" secondAttribute="bottom" constant="25" id="Sjp-iR-4PS"/>
+                            <constraint firstItem="OPV-hL-E14" firstAttribute="centerX" secondItem="JcR-a5-5wI" secondAttribute="centerX" id="YnJ-Ql-eNz"/>
+                            <constraint firstItem="tcO-8S-Y6P" firstAttribute="leading" secondItem="5bY-JE-ohb" secondAttribute="leading" constant="163" id="b25-q5-FPd"/>
+                            <constraint firstItem="5bY-JE-ohb" firstAttribute="trailing" secondItem="tcO-8S-Y6P" secondAttribute="trailing" constant="163" id="bDY-47-xWk"/>
+                            <constraint firstItem="vWs-46-hjK" firstAttribute="centerX" secondItem="JcR-a5-5wI" secondAttribute="centerX" id="bYo-Fz-fxg"/>
+                            <constraint firstItem="hdl-nk-SJa" firstAttribute="leading" secondItem="5bY-JE-ohb" secondAttribute="leading" constant="60" id="fHX-qi-gQx"/>
+                            <constraint firstItem="tcO-8S-Y6P" firstAttribute="centerX" secondItem="JcR-a5-5wI" secondAttribute="centerX" id="l93-Gd-9Rl"/>
+                            <constraint firstItem="5bY-JE-ohb" firstAttribute="trailing" secondItem="hdl-nk-SJa" secondAttribute="trailing" constant="60" id="n9v-Te-rSZ"/>
+                            <constraint firstItem="tcO-8S-Y6P" firstAttribute="top" secondItem="5bY-JE-ohb" secondAttribute="top" constant="26" id="tk6-ng-IkM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5bY-JE-ohb"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="vWs-46-hjK" id="NHq-rU-NBm"/>
+                        <outlet property="playButton" destination="OPV-hL-E14" id="V72-8v-Y7F"/>
+                        <outlet property="recordButton" destination="tcO-8S-Y6P" id="bt6-gF-enX"/>
+                        <outlet property="soundNameTextField" destination="hdl-nk-SJa" id="wWD-Aq-dux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2QU-wm-Twy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485.5999999999999" y="103.89805097451276"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YA1-2f-wFw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ewe-7x-teI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B5c-mt-Fxf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nWc-le-Nvx" kind="relationship" relationship="rootViewController" id="eKg-pY-xp1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="utR-4e-GUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="162"/>
+        </scene>
+    </scenes>
+</document>

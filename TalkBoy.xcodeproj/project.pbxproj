@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEC2208D1FDB650F0022D2DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC2208C1FDB650F0022D2DA /* AppDelegate.swift */; };
+		AEC220921FDB650F0022D2DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC220901FDB650F0022D2DA /* Main.storyboard */; };
+		AEC220951FDB650F0022D2DA /* TalkBoy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEC220931FDB650F0022D2DA /* TalkBoy.xcdatamodeld */; };
+		AEC220971FDB650F0022D2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC220961FDB650F0022D2DA /* Assets.xcassets */; };
+		AEC2209A1FDB650F0022D2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC220981FDB650F0022D2DA /* LaunchScreen.storyboard */; };
+		AEC220A51FDB650F0022D2DA /* TalkBoyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC220A41FDB650F0022D2DA /* TalkBoyTests.swift */; };
+		AEC220B21FDB68520022D2DA /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC220B11FDB68520022D2DA /* RecordViewController.swift */; };
+		AEC220B41FDB687C0022D2DA /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC220B31FDB687C0022D2DA /* MainTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEC220A11FDB650F0022D2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC220811FDB650F0022D2DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC220881FDB650F0022D2DA;
+			remoteInfo = TalkBoy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEC220891FDB650F0022D2DA /* TalkBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC2208C1FDB650F0022D2DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEC220911FDB650F0022D2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEC220941FDB650F0022D2DA /* TalkBoy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TalkBoy.xcdatamodel; sourceTree = "<group>"; };
+		AEC220961FDB650F0022D2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEC220991FDB650F0022D2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEC2209B1FDB650F0022D2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC220A01FDB650F0022D2DA /* TalkBoyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkBoyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC220A41FDB650F0022D2DA /* TalkBoyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkBoyTests.swift; sourceTree = "<group>"; };
+		AEC220A61FDB650F0022D2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC220B11FDB68520022D2DA /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		AEC220B31FDB687C0022D2DA /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEC220861FDB650F0022D2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC2209D1FDB650F0022D2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEC220801FDB650F0022D2DA = {
+			isa = PBXGroup;
+			children = (
+				AEC2208B1FDB650F0022D2DA /* TalkBoy */,
+				AEC220A31FDB650F0022D2DA /* TalkBoyTests */,
+				AEC2208A1FDB650F0022D2DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEC2208A1FDB650F0022D2DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC220891FDB650F0022D2DA /* TalkBoy.app */,
+				AEC220A01FDB650F0022D2DA /* TalkBoyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEC2208B1FDB650F0022D2DA /* TalkBoy */ = {
+			isa = PBXGroup;
+			children = (
+				AEC220B11FDB68520022D2DA /* RecordViewController.swift */,
+				AEC220B31FDB687C0022D2DA /* MainTableViewController.swift */,
+				AEC2208C1FDB650F0022D2DA /* AppDelegate.swift */,
+				AEC220901FDB650F0022D2DA /* Main.storyboard */,
+				AEC220961FDB650F0022D2DA /* Assets.xcassets */,
+				AEC220981FDB650F0022D2DA /* LaunchScreen.storyboard */,
+				AEC2209B1FDB650F0022D2DA /* Info.plist */,
+				AEC220931FDB650F0022D2DA /* TalkBoy.xcdatamodeld */,
+			);
+			path = TalkBoy;
+			sourceTree = "<group>";
+		};
+		AEC220A31FDB650F0022D2DA /* TalkBoyTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEC220A41FDB650F0022D2DA /* TalkBoyTests.swift */,
+				AEC220A61FDB650F0022D2DA /* Info.plist */,
+			);
+			path = TalkBoyTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEC220881FDB650F0022D2DA /* TalkBoy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC220A91FDB650F0022D2DA /* Build configuration list for PBXNativeTarget "TalkBoy" */;
+			buildPhases = (
+				AEC220851FDB650F0022D2DA /* Sources */,
+				AEC220861FDB650F0022D2DA /* Frameworks */,
+				AEC220871FDB650F0022D2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkBoy;
+			productName = TalkBoy;
+			productReference = AEC220891FDB650F0022D2DA /* TalkBoy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEC2209F1FDB650F0022D2DA /* TalkBoyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC220AC1FDB650F0022D2DA /* Build configuration list for PBXNativeTarget "TalkBoyTests" */;
+			buildPhases = (
+				AEC2209C1FDB650F0022D2DA /* Sources */,
+				AEC2209D1FDB650F0022D2DA /* Frameworks */,
+				AEC2209E1FDB650F0022D2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC220A21FDB650F0022D2DA /* PBXTargetDependency */,
+			);
+			name = TalkBoyTests;
+			productName = TalkBoyTests;
+			productReference = AEC220A01FDB650F0022D2DA /* TalkBoyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEC220811FDB650F0022D2DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Code Path";
+				TargetAttributes = {
+					AEC220881FDB650F0022D2DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AEC2209F1FDB650F0022D2DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AEC220881FDB650F0022D2DA;
+					};
+				};
+			};
+			buildConfigurationList = AEC220841FDB650F0022D2DA /* Build configuration list for PBXProject "TalkBoy" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEC220801FDB650F0022D2DA;
+			productRefGroup = AEC2208A1FDB650F0022D2DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEC220881FDB650F0022D2DA /* TalkBoy */,
+				AEC2209F1FDB650F0022D2DA /* TalkBoyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEC220871FDB650F0022D2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC2209A1FDB650F0022D2DA /* LaunchScreen.storyboard in Resources */,
+				AEC220971FDB650F0022D2DA /* Assets.xcassets in Resources */,
+				AEC220921FDB650F0022D2DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC2209E1FDB650F0022D2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEC220851FDB650F0022D2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC220B41FDB687C0022D2DA /* MainTableViewController.swift in Sources */,
+				AEC220B21FDB68520022D2DA /* RecordViewController.swift in Sources */,
+				AEC220951FDB650F0022D2DA /* TalkBoy.xcdatamodeld in Sources */,
+				AEC2208D1FDB650F0022D2DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC2209C1FDB650F0022D2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC220A51FDB650F0022D2DA /* TalkBoyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEC220A21FDB650F0022D2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC220881FDB650F0022D2DA /* TalkBoy */;
+			targetProxy = AEC220A11FDB650F0022D2DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEC220901FDB650F0022D2DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC220911FDB650F0022D2DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEC220981FDB650F0022D2DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC220991FDB650F0022D2DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEC220A71FDB650F0022D2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEC220A81FDB650F0022D2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEC220AA1FDB650F0022D2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalkBoy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kismat.TalkBoy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEC220AB1FDB650F0022D2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalkBoy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kismat.TalkBoy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEC220AD1FDB650F0022D2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalkBoyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kismat.TalkBoyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkBoy.app/TalkBoy";
+			};
+			name = Debug;
+		};
+		AEC220AE1FDB650F0022D2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalkBoyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kismat.TalkBoyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkBoy.app/TalkBoy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEC220841FDB650F0022D2DA /* Build configuration list for PBXProject "TalkBoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC220A71FDB650F0022D2DA /* Debug */,
+				AEC220A81FDB650F0022D2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC220A91FDB650F0022D2DA /* Build configuration list for PBXNativeTarget "TalkBoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC220AA1FDB650F0022D2DA /* Debug */,
+				AEC220AB1FDB650F0022D2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC220AC1FDB650F0022D2DA /* Build configuration list for PBXNativeTarget "TalkBoyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC220AD1FDB650F0022D2DA /* Debug */,
+				AEC220AE1FDB650F0022D2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AEC220931FDB650F0022D2DA /* TalkBoy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AEC220941FDB650F0022D2DA /* TalkBoy.xcdatamodel */,
+			);
+			currentVersion = AEC220941FDB650F0022D2DA /* TalkBoy.xcdatamodel */;
+			path = TalkBoy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AEC220811FDB650F0022D2DA /* Project object */;
+}
