@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MainTableViewController: UITableViewController {
   var sounds: [Sound] =  []
-  
+  var audioPlayer : AVAudioPlayer?
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -62,6 +63,14 @@ class MainTableViewController: UITableViewController {
         getSound()
       }
     }
+  }
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     let sound = sounds[indexPath.row]
+    if let audioData = sound.audioData {
+      audioPlayer = try? AVAudioPlayer(data: audioData)
+      audioPlayer?.play()
+    }
+    
   }
   
   
